@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView android:id="@+id/tv_title" style="@style/ET.Title"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="STOCK IN" />
+
+        <TextView android:id="@+id/tv_subtitle" style="@style/ET.Caption"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" android:textSize="13sp" />
+
+        <TextView style="@style/ET.FieldLabel" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Product *" />
+        <Spinner android:id="@+id/sp_product" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@drawable/bg_spinner" />
+
+        <LinearLayout style="@style/ET.Card" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView style="@style/ET.Label" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="Current stock" />
+            <TextView android:id="@+id/tv_current" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/text_primary" android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/lbl_qty" style="@style/ET.FieldLabel"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Quantity received *" />
+        <EditText android:id="@+id/et_qty" style="@style/ET.Input" android:hint="0"
+            android:inputType="number" />
+
+        <TextView android:id="@+id/lbl_price" style="@style/ET.FieldLabel"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Purchase price (optional override)" />
+        <EditText android:id="@+id/et_price" style="@style/ET.Input"
+            android:hint="Leave empty to keep current price" android:inputType="numberDecimal" />
+
+        <TextView style="@style/ET.FieldLabel" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Date" />
+        <TextView android:id="@+id/tv_date" style="@style/ET.Input"
+            android:clickable="true" android:focusable="true" />
+
+        <TextView android:id="@+id/lbl_note" style="@style/ET.FieldLabel"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Notes (optional)" />
+        <EditText android:id="@+id/et_note" style="@style/ET.Input"
+            android:hint="e.g. Supplier delivery" android:inputType="textCapSentences" />
+
+        <Button android:id="@+id/btn_save" style="@style/ET.Button.Primary"
+            android:layout_marginTop="28dp" android:text="Record stock in" />
+        <Button android:id="@+id/btn_cancel" style="@style/ET.Button.Secondary"
+            android:layout_marginTop="10dp" android:text="Cancel" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView style="@style/ET.Title" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="SETTINGS" />
+
+            <LinearLayout style="@style/ET.Card" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginTop="16dp"
+                android:gravity="center_vertical" android:orientation="horizontal">
+                <ImageView android:layout_width="56dp" android:layout_height="56dp"
+                    android:src="@drawable/logo_round" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp" android:orientation="vertical">
+                    <TextView style="@style/ET.Body" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:fontFamily="sans-serif-medium"
+                        android:text="Easy Tracker" />
+                    <TextView android:id="@+id/tv_version" style="@style/ET.Caption"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Christocentricus Innovations" android:textColor="@color/green"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView style="@style/ET.Section" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Currency" />
+            <Spinner android:id="@+id/sp_currency" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:background="@drawable/bg_spinner" />
+
+            <TextView style="@style/ET.Section" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Stock valuation" />
+            <TextView style="@style/ET.Caption" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                android:text="Choose how the dashboard calculates total stock value." />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView android:id="@+id/chip_cost" style="@style/ET.Chip" android:text="At purchase price" />
+                <TextView android:id="@+id/chip_retail" style="@style/ET.Chip" android:text="At selling price" />
+            </LinearLayout>
+
+            <TextView style="@style/ET.Section" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Data" />
+            <Button android:id="@+id/btn_csv" style="@style/ET.Button.Secondary"
+                android:text="Export inventory (CSV)" />
+            <Button android:id="@+id/btn_backup" style="@style/ET.Button.Secondary"
+                android:layout_marginTop="10dp" android:text="Backup database" />
+            <TextView style="@style/ET.Caption" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="10dp"
+                android:text="All data is stored on this device and works fully offline." />
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/include_bottom_nav" />
+</LinearLayout>
