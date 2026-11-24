@@ -21,7 +21,7 @@
         <item name="android:textColorSecondary">@color/text_secondary</item>
     </style>
 
-    <style name="ET.Title">
+    <style name="ET.Title" parent="">
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:textStyle">bold</item>
@@ -29,7 +29,7 @@
         <item name="android:letterSpacing">0.06</item>
     </style>
 
-    <style name="ET.Section">
+    <style name="ET.Section" parent="">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:fontFamily">sans-serif-medium</item>
@@ -37,7 +37,7 @@
         <item name="android:layout_marginBottom">10dp</item>
     </style>
 
-    <style name="ET.Label">
+    <style name="ET.Label" parent="">
         <item name="android:textSize">11sp</item>
         <item name="android:textColor">@color/text_secondary</item>
         <item name="android:fontFamily">sans-serif-medium</item>
@@ -45,24 +45,24 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="ET.Caption">
+    <style name="ET.Caption" parent="">
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/text_secondary</item>
     </style>
 
-    <style name="ET.Body">
+    <style name="ET.Body" parent="">
         <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/text_primary</item>
     </style>
 
-    <style name="ET.StatValue">
+    <style name="ET.StatValue" parent="">
         <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/text_primary</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="ET.Card">
+    <style name="ET.Card" parent="">
         <item name="android:background">@drawable/bg_card</item>
         <item name="android:padding">16dp</item>
     </style>
@@ -72,7 +72,7 @@
         <item name="android:layout_marginBottom">6dp</item>
     </style>
 
-    <style name="ET.Input">
+    <style name="ET.Input" parent="">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/bg_input</item>
@@ -107,7 +107,7 @@
         <item name="android:textColor">@color/red</item>
     </style>
 
-    <style name="ET.Chip">
+    <style name="ET.Chip" parent="">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">16dp</item>
@@ -122,7 +122,7 @@
         <item name="android:focusable">true</item>
     </style>
 
-    <style name="ET.Tile">
+    <style name="ET.Tile" parent="">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
@@ -135,7 +135,7 @@
         <item name="android:foreground">?attr/selectableItemBackground</item>
     </style>
 
-    <style name="ET.StatusChip">
+    <style name="ET.StatusChip" parent="">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:paddingLeft">10dp</item>
